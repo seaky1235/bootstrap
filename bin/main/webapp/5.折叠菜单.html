@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泰牛程序员后台管理系统</title>
+    <!--让IE用最新模式渲染,获得更好的效果-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--视口，viewport，指的就是手机端可见窗口（去掉导航栏、菜单栏、地址栏之后的窗口）
+    再添加视口这段代码之前，设备会按照桌面电脑的分辨率去渲染整个页面，然后再按照比例显示到手机上
+    添加强制按照手机的屏幕分辨率渲染页面-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="#collapseOne" data-toggle="collapse">点击折叠，再次点击显示</a>
+            </div>
+            <div class="panel-collapse collase" id="collapseOne">
+                <div class="panel-body">
+                    这里是面板的内容区域
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+//           $('#collapseOne').collapse('show');
+            $('#collapseOne').on('show.bs.collapse',function () {
+//                alert('即将显示');
+            })
+            $('#collapseOne').on('shown.bs.collapse',function () {
+//                alert('已经显示');
+            })
+            $('#collapseOne').on('hide.bs.collapse',function () {
+//                alert('即将隐藏');
+            })
+            $('#collapseOne').on('hidden.bs.collapse',function () {
+//                alert('已经隐藏');
+            })
+        })
+    </script>
+</body>
+</html>

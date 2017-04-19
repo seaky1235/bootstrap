@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泰牛程序员后台管理系统</title>
+    <!--让IE用最新模式渲染,获得更好的效果-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--视口，viewport，指的就是手机端可见窗口（去掉导航栏、菜单栏、地址栏之后的窗口）
+    再添加视口这段代码之前，设备会按照桌面电脑的分辨率去渲染整个页面，然后再按照比例显示到手机上
+    添加强制按照手机的屏幕分辨率渲染页面-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        #section1,#section2,#section3{
+            height:728px;
+        }
+        #section1{
+            background: red;
+        }
+        #section2{
+            background: green;
+        }
+        #section3{
+            background: blue;
+        }
+        #nav{
+            position: fixed;
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3" id="myScroll">
+                <nav>
+                    <ul class="nav nav-pills nav-stacked" id="nav">
+                        <li class="active"><a href="#section1">Section1</a></li>
+                        <li><a href="#section2">Section2</a></li>
+                        <li><a href="#section3">Section3</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <div id="section1">
+                    <h1>这是section1的标题</h1>
+                </div>
+                <div id="section2">
+                    <h1>这是section1的标题</h1>
+                </div>
+                <div id="section3">
+                    <h1>这是section1的标题</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('body').scrollspy({
+                target:'#myScroll'
+            })
+            //
+            $('#myScroll').on('activate.bs.scrollspy',function () {
+                var activeItem = $('#myScroll li.active').text();
+                alert('当前显示的是:'+activeItem);
+            })
+        })
+    </script>
+</body>
+</html>

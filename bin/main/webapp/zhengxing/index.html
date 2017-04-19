@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泰牛程序员后台忠心</title>
+    <!--让IE用最新模式渲染,获得更好的效果-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+        a{
+            color:#000000;
+        }
+        #main .nav-head{
+            max-height:50px;
+            line-height: 40px;
+        }
+        #main{
+            max-width: 640px;
+            margin: auto;
+        }
+        #main .row a{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .nav-menu{
+           background: #BE9E7F;
+        }
+        .nav-menu div{
+            border-right: 1px solid #fff;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+        .nav-menu div a{
+            color: #fff;
+        }
+        #myCarousel{
+            width: 100%;
+        }
+        .intro .panel-body p{
+            text-indent: 2em;;
+        }
+        .project .thumbnail{
+            text-align: center;
+        }
+        .project .thumbnail span{
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row nav-head">
+            <div class="col-xs-6 col-sm-6">
+                <a href="#">
+                    <img src="../img/logo.png" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-6 tel">
+                <i class="glyphicon glyphicon-phone-alt"></i>
+                <a href="tel:010 5718 0327">010-5718 0327</a>
+            </div>
+        </div>
+        <div class="row nav-menu">
+           <div class="col-xs-3 col-sm-3">
+               <a href="#">首页</a>
+           </div>
+           <div class="col-xs-3 col-sm-3">
+               <a href="#">项目</a>
+           </div>
+           <div class="col-xs-3 col-sm-3">
+               <a href="#">热门</a>
+           </div>
+           <div class="col-xs-3 col-sm-3" style="border-right: none;">
+               <a href="#">专家</a>
+           </div>
+        </div>
+        <div class="row"  style="position:relative">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active full_img">
+                        <img src="../img/1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="../img/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="../img/3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left banner_i" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="carousel-control right banner_i" href="#myCarousel" data-slide="next">›</a>
+            </div>
+        </div>
+        <div class="row intro">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    公司简介
+                </div>
+                <div class="panel-body">
+                    <p>
+                        泰牛程序员是北京每学教育科技有限公司旗下教育品牌，公司专门致力于培养高素质软件开发人才，培养能干活，干好活的一流的软件人才，解决IT企业最热门技术的难点。
+                        整合了国内众多知名软件企业的资源，并邀请到任跨国公司和国内大中型企业架构师，系统分析师、企业培训师组成自己的精英团队。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row project">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    热门项目
+                </div>
+                <div class="panel-body">
+                   <div class="row">
+                       <div class="col-xs-4 col-sm-3">
+                           <a class="thumbnail">
+                               <img src="../img/meibi.jpg">
+                               <span>IT大牛特训</span>
+                           </a>
+                       </div>
+                       <div class="col-xs-4 col-sm-3">
+                           <a class="thumbnail">
+                               <img src="../img/meibi.jpg">
+                               <span> IT大牛特训</span>
+                           </a>
+                       </div>
+                       <div class="col-xs-4 col-sm-3">
+                           <a class="thumbnail">
+                               <img src="../img/meibi.jpg">
+                               <span> IT大牛特训</span>
+                           </a>
+                       </div>
+                       <div class="col-xs-4 col-sm-3">
+                           <a class="thumbnail">
+                               <img src="../img/meibi.jpg">
+                               <span> IT大牛特训</span>
+                           </a>
+                       </div>
+                       <div class="col-xs-4 col-sm-3">
+                           <a class="thumbnail">
+                               <img src="../img/meibi.jpg">
+                               <span> IT大牛特训</span>
+                           </a>
+
+                       </div>
+                       <div class="col-xs-4 col-sm-3">
+                           <a class="thumbnail">
+                               <img src="../img/meibi.jpg">
+                               <span> IT大牛特训</span>
+                           </a>
+                       </div>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="row news">
+            <div class="panel panel-default" style="margin-bottom: 0px !important;">
+                <div class="panel-heading">
+                    最新动态
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#"> 志玲姐姐来我院整容</a>
+                        <span class="badge pull-right">10</span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">志玲姐姐来我院整容</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">志玲姐姐来我院整容</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">志玲姐姐来我院整容</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">志玲姐姐来我院整容</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row copy" style="text-align: center;background: #ddd;padding-top:15px;padding-bottom: 50px;">
+            <p>Copyright © 2015 北京叶子整形美容医院 </p>
+            <p>（京）医广【2014】第07-18-0184号　京ICP备07504320号　京卫网审[2014]第0071号</p>
+        </div>
+        <div class="row navbar-fixed-bottom" style="max-width:640px;margin:auto;line-height: 40px;height: 40px;background: #BE9E7F;">
+            <div class="col-xs-3 col-sm-3">
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    电话
+                </a>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    电话
+                </a>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    电话
+                </a>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    电话
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

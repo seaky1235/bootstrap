@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泰牛程序员后台管理系统</title>
+    <!--让IE用最新模式渲染,获得更好的效果-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--视口，viewport，指的就是手机端可见窗口（去掉导航栏、菜单栏、地址栏之后的窗口）
+    再添加视口这段代码之前，设备会按照桌面电脑的分辨率去渲染整个页面，然后再按照比例显示到手机上
+    添加强制按照手机的屏幕分辨率渲染页面-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#home">首页</a></li>
+            <li><a href="#relate">关于我们</a></li>
+            <li><a href="#major">专业介绍</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active fade in" id="home">
+                首页：关于韩老师的坚持说，让我感动了好长时间呀.
+            </div>
+            <div class="tab-pane fade" id="relate">
+                关于我们：关于韩老师的坚持说，让我感动了好长时间呀.
+            </div>
+            <div class="tab-pane fade" id="major">
+                专业介绍：关于韩老师的坚持说，让我感动了好长时间呀.
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('.nav-pills a').click(function () {
+                $(this).tab('show');
+            })
+            $('.nav-pills a').on('shown.bs.tab',function (e) {
+                //e,指的是事件对象，获得当前点击的是哪个a标签
+                var currentItem = $(e.target).text();
+                var prevTab = $(e.relatedTarget).text();
+                alert('当前的标签页:'+currentItem);
+                alert('上一个标签页:'+prevTab);
+            })
+        })
+    </script>
+</body>
+</html>
